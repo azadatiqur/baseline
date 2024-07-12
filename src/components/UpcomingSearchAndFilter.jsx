@@ -11,9 +11,9 @@ import {
 } from "./ui/dropdown-menu";
 const UpcomingSearchAndFilter = () => {
   return (
-    <>
-      <p className="text-xl">Upcoming</p>
-      <div className="flex flex-row">
+    <div className="flex flex-row items-center mb-5">
+      <p className="text-xl ml-15">Upcoming</p>
+      <div className="flex flex-row items-center gap-5 justify-end ml-auto">
         <div className="relative ml-auto flex-1 md:grow-0">
           <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
           <Input
@@ -31,16 +31,16 @@ const UpcomingSearchAndFilter = () => {
               </span>
             </Button>
           </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
+          <DropdownMenuContent align="end" classname="z-10">
             <DropdownMenuLabel>Filter by</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuCheckboxItem checked>Active</DropdownMenuCheckboxItem>
-            <DropdownMenuCheckboxItem>Draft</DropdownMenuCheckboxItem>
-            <DropdownMenuCheckboxItem>Archived</DropdownMenuCheckboxItem>
+            <DropdownMenuCheckboxItem checked>All</DropdownMenuCheckboxItem>
+            <DropdownMenuCheckboxItem>Drop-off</DropdownMenuCheckboxItem>
+            <DropdownMenuCheckboxItem>Pickup</DropdownMenuCheckboxItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
-    </>
+    </div>
   );
 };
 

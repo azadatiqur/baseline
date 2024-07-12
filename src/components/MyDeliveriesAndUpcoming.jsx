@@ -9,7 +9,7 @@ const MyDeliveriesAndUpcoming = () => {
         <MapSearchAndFilter />
         <MapComponent />
       </div>
-      <div className="w-full flex flex-col justify-between m-4">
+      <div className="w-full sm:m-4">
         <UpcomingSearchAndFilter />
         <UpcomingDeliveries />
       </div>

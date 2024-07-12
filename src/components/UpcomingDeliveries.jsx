@@ -5,7 +5,7 @@ const UpcomingDeliveries = () => {
   return (
     <ul
       role="list"
-      className="ml-16 mr-16 mb-16 mt-0 divide-y divide-gray-200 border border-gray-200 rounded-2xl"
+      className="ml-0 mr-16 mb-16 mt-0 divide-y divide-gray-200 border border-gray-200 rounded-2xl w-full"
     >
       {DeliveriesData.map((delivery, index) => {
         if (delivery.status === "Pending") {
