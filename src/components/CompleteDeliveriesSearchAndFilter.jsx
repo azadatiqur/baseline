@@ -9,12 +9,12 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
-const MapSearchAndFilter = () => {
+const CompleteDeliveriesSearchAndFilter = () => {
   return (
-    <div className="flex flex-row items-center mb-5 gap-4">
-      <p className="text-xl">My Deliveries</p>
+    <div className="flex flex-row gap-4">
+      <p className="text-xl">Complete</p>
       <div className="flex flex-row items-center gap-5 justify-end ml-auto">
-        <div className="relative">
+        <div className="relative ml-auto flex-1 md:grow-0">
           <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
           <Input
             type="search"
@@ -44,4 +44,4 @@ const MapSearchAndFilter = () => {
   );
 };
 
-export default MapSearchAndFilter;
+export default CompleteDeliveriesSearchAndFilter;

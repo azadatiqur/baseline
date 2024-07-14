@@ -9,6 +9,7 @@ const DeliveriesData = [
     longitude: 91.83134528204974,
     dateTime: "24 March 2023 at 3:49",
     status: "Pending",
+    driver: "Nur Emon",
   },
   {
     id: 2,
@@ -21,6 +22,7 @@ const DeliveriesData = [
     longitude: 90.40384553791243,
     dateTime: "24 March 2024 at 4:59",
     status: "Pending",
+    driver: "Abdul Hakim",
   },
   {
     id: 3,
@@ -32,6 +34,7 @@ const DeliveriesData = [
     longitude: 91.40384553791243,
     dateTime: "24 March 2024 at 4:59",
     status: "Completed",
+    driver: "Nur Emon",
   },
   {
     id: 4,
@@ -43,6 +46,7 @@ const DeliveriesData = [
     longitude: 91.40384553791243,
     dateTime: "24 March 2024 at 4:59",
     status: "Completed",
+    driver: "Nur Emon",
   },
 ];
 

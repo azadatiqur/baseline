@@ -11,7 +11,7 @@ import {
 } from "./ui/dropdown-menu";
 const UpcomingSearchAndFilter = () => {
   return (
-    <div className="flex flex-row items-center mb-5">
+    <div className="flex flex-row items-center mb-5 p-1 sm:p-0 gap-4">
       <p className="text-xl">Upcoming</p>
       <div className="flex flex-row items-center gap-5 justify-end ml-auto">
         <div className="relative ml-auto flex-1 md:grow-0">

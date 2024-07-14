@@ -1,8 +1,9 @@
 import { RxCaretRight } from "react-icons/rx";
 import truckPic from "../assets/images/truck.png";
+import { Link } from "react-router-dom";
 const Delivery = ({ delivery, index, customBorderBottomStyle = "" }) => {
   return (
-    <a href="{`/delivery/${index}`}" className="m-0">
+    <Link to={`/delivery/${index}`} className="m-0">
       <li
         className={`flex flex-row justify-between items-center px-5 py-5  hover:bg-gray-400 hover:bg-opacity-50 ${customBorderBottomStyle}`}
       >
@@ -30,7 +31,7 @@ const Delivery = ({ delivery, index, customBorderBottomStyle = "" }) => {
           <RxCaretRight />
         </div>
       </li>
-    </a>
+    </Link>
   );
 };
 

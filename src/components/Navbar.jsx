@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-
+import { Link } from "react-router-dom";
 import { Package2, Menu, CircleUser } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import {
@@ -15,13 +15,13 @@ const Navbar = () => {
     <div className="flex w-full flex-col">
       <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
         <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6 justify-between">
-          <a
-            href="#"
+          <Link
+            to="/"
             className="flex items-center gap-2 text-lg font-semibold md:text-base justify-left ml-auto"
           >
             <Package2 className="h-6 w-6" />
             <span className="sr-only">Acme Inc</span>
-          </a>
+          </Link>
           <div className="flex flex-row gap-5 items-center">
             <a
               href="#"
@@ -47,12 +47,12 @@ const Navbar = () => {
             >
               Locations
             </a>
-            <a
-              href="#"
+            <Link
+              to="/users"
               className="text-muted-foreground transition-colors hover:text-foreground"
             >
               Users
-            </a>
+            </Link>
           </div>
         </nav>
         <Sheet>
@@ -68,13 +68,13 @@ const Navbar = () => {
           </SheetTrigger>
           <SheetContent side="left">
             <nav className="grid gap-6 text-lg font-medium">
-              <a
-                href="#"
+              <Link
+                to="/"
                 className="flex items-center gap-2 text-lg font-semibold"
               >
                 <Package2 className="h-6 w-6" />
                 <span className="sr-only">Acme Inc</span>
-              </a>
+              </Link>
               <a
                 href="#"
                 className="text-muted-foreground hover:text-foreground"
@@ -99,12 +99,12 @@ const Navbar = () => {
               >
                 Locations
               </a>
-              <a
-                href="#"
+              <Link
+                to="/users"
                 className="text-muted-foreground hover:text-foreground"
               >
                 Users
-              </a>
+              </Link>
             </nav>
           </SheetContent>
         </Sheet>
