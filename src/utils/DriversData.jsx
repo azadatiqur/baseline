@@ -1,4 +1,4 @@
-const DriversData = {
+let DriversData = {
   "Nur Emon": {
     vehicle: "Volvo Truck",
     license: "L-97914",

@@ -2,6 +2,16 @@ import DeliveriesData from "@/utils/DeliveriesData";
 import Delivery from "./Delivery";
 const UpcomingDeliveries = () => {
   const customBorderBottomStyle = "border-b-2 border-b-gray-200";
+  const getPendingDeliveriesLastIndex = () => {
+    let indx = -1;
+    DeliveriesData.map((delivery, index) => {
+      if (delivery.status === "Pending") {
+        indx = index;
+      }
+    });
+    return indx;
+  };
+  const pendingDeliveriesLastIndex = getPendingDeliveriesLastIndex();
   return (
     <ul
       role="list"
@@ -9,7 +19,7 @@ const UpcomingDeliveries = () => {
     >
       {DeliveriesData.map((delivery, index) => {
         if (delivery.status === "Pending") {
-          return index !== DeliveriesData.length - 1 ? (
+          return index !== pendingDeliveriesLastIndex ? (
             <Delivery
               key={index}
               delivery={delivery}

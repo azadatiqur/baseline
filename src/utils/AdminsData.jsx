@@ -1,4 +1,4 @@
-const AdminsData = {
+let AdminsData = {
   "MD Rana": {
     contact: "01234567890",
   },

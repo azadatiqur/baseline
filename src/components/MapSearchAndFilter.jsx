@@ -11,15 +11,15 @@ import {
 } from "./ui/dropdown-menu";
 const MapSearchAndFilter = () => {
   return (
-    <div className="flex flex-row items-center mb-5 gap-4">
+    <div className="flex lg:flex-row flex-col items-center mb-5 gap-4">
       <p className="text-xl">My Deliveries</p>
-      <div className="flex flex-row items-center gap-5 justify-end ml-auto">
-        <div className="relative">
+      <div className="w-full lg:w-auto flex flex-row items-center gap-5 justify-end ml-auto">
+        <div className="relative w-full">
           <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
           <Input
             type="search"
             placeholder="Search..."
-            className="w-full rounded-lg bg-background pl-8 md:w-[200px] lg:w-[320px]"
+            className="rounded-lg bg-background pl-8 "
           />
         </div>
         <DropdownMenu>

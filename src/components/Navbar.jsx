@@ -23,30 +23,30 @@ const Navbar = () => {
             <span className="sr-only">Acme Inc</span>
           </Link>
           <div className="flex flex-row gap-5 items-center">
-            <a
-              href="#"
+            <Link
+              to="/"
               className="text-muted-foreground transition-colors hover:text-foreground"
             >
               Driver
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/dispatch"
               className="text-muted-foreground transition-colors hover:text-foreground"
             >
               Dispatch
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/order-status"
               className="text-muted-foreground transition-colors hover:text-foreground whitespace-nowrap"
             >
               Order Status
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/locations"
               className="text-muted-foreground transition-colors hover:text-foreground"
             >
               Locations
-            </a>
+            </Link>
             <Link
               to="/users"
               className="text-muted-foreground transition-colors hover:text-foreground"
@@ -75,18 +75,18 @@ const Navbar = () => {
                 <Package2 className="h-6 w-6" />
                 <span className="sr-only">Acme Inc</span>
               </Link>
-              <a
-                href="#"
+              <Link
+                to="/"
                 className="text-muted-foreground hover:text-foreground"
               >
                 Driver
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/dispatch"
                 className="text-muted-foreground hover:text-foreground"
               >
                 Dispatch
-              </a>
+              </Link>
               <a
                 href="#"
                 className="text-muted-foreground hover:text-foreground"

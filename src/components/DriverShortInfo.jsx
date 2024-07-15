@@ -15,14 +15,14 @@ const DriverShortInfo = ({ driver }) => {
       <div className="flex flex-row w-full gap-4">
         <a
           href={`tel:${DriversData[driver].contact}`}
-          className="w-full bg-gray-500 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded-2xl flex flex-col items-center justify-between"
+          className="w-1/2 bg-gray-500 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded-2xl flex flex-col items-center justify-between"
         >
           <FaPhone />
-          <p>Call Contact</p>
+          <p className="whitespace-nowrap">Call Contact</p>
         </a>
         <a
           href="/"
-          className="w-full bg-gray-500 border-white border-2 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded-2xl inline-block flex flex-col items-center"
+          className="w-1/2 bg-gray-500 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded-2xl flex flex-col items-center justify-between"
         >
           <MdEdit />
           Edit

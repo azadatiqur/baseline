@@ -8,7 +8,7 @@ const Deliveries = () => {
       className="ml-16 mr-16 mb-16 mt-0 divide-y divide-gray-200 border border-gray-200 rounded-2xl"
     >
       {DeliveriesData.map((delivery, index) =>
-        index !== DeliveriesData.length - 1 ? (
+        index !== length - 1 ? (
           <Delivery
             key={index}
             delivery={delivery}

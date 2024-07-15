@@ -1,25 +1,25 @@
 import { Search } from "lucide-react";
-import { Button } from "../components/ui/button";
+
 import { Input } from "../components/ui/input";
 import { CgProfile } from "react-icons/cg";
+import AddUserModalButton from "@/components/AddUserModalButton";
 import DriversData from "@/utils/DriversData";
 import AdminsData from "@/utils/AdminsData";
 const Users = () => {
   return (
     <div className="flex flex-col gap-6 p-4">
-      <div className="w-full flex flex-row">
+      <div className="w-full flex flex-col lg:flex-row gap-2">
         <p className="w-full text-2xl font-semibold">Users</p>
-        <div className="relative m-auto gap-2 flex flex-row">
+        <div className="relative m-auto w-full lg:w-[500px] gap-2 flex flex-row">
           <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
           <Input
             type="search"
             placeholder="Search..."
-            className="w-full rounded-lg bg-background pl-8 w-[150px] md:w-[200px] lg:w-[320px]"
+            className="w-full rounded-lg bg-background pl-8 "
           />
-          <Button>+Add User</Button>
+          <AddUserModalButton />
         </div>
       </div>
-
       <div className="flex flex-col gap-2">
         <p className="text-lg font-semibold">Driver</p>
         <div className="flex flex-row gap-2">

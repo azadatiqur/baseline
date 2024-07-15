@@ -22,7 +22,7 @@ const Delivery = ({ delivery, index, customBorderBottomStyle = "" }) => {
             <p className="text-lg font-extrabold leading-5 text-gray-900">
               {delivery.name}
             </p>
-            <p className="mt-1 text-s leading-5 text-gray-500">
+            <p className="truncate lg:w-full w-24 mt-1 text-s leading-5 text-gray-500">
               {delivery.location}
             </p>
           </div>

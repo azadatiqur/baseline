@@ -14,10 +14,10 @@ const ImageUploader = () => {
   });
 
   return (
-    <div {...getRootProps({ className: "dropzone" })}>
+    <div id="photo" {...getRootProps({ className: "dropzone" })}>
       <input {...getInputProps()} />
 
-      <span className="flex flex-row justify-between items-center gap-2">
+      <span className="flex flex-row justify-left items-center gap-2">
         <FaFileImage />
         Choose an image...
       </span>

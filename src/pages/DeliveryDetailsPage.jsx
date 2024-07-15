@@ -1,6 +1,6 @@
 import DeliveriesData from "@/utils/DeliveriesData";
 import DriversData from "@/utils/DriversData";
-import { FaCaretRight } from "react-icons/fa";
+import { RxCaretRight } from "react-icons/rx";
 import { FaPhone } from "react-icons/fa6";
 import { useParams } from "react-router-dom";
 import { MdEdit } from "react-icons/md";
@@ -11,9 +11,13 @@ import DeliveryConfirmation from "@/components/DeliveryConfirmation";
 const DeliveryDetailsPage = () => {
   const { deliveryIndex } = useParams();
   const pendingStatusBackground =
-    DeliveriesData[deliveryIndex].status === "Pending" ? "bg-blue-400" : "";
+    DeliveriesData[deliveryIndex].status === "Pending"
+      ? "bg-blue-400 border-blue-400 font-bold text-black"
+      : "";
   const completedStatusBackground =
-    DeliveriesData[deliveryIndex].status === "Completed" ? "bg-blue-400" : "";
+    DeliveriesData[deliveryIndex].status === "Completed"
+      ? "bg-blue-400 border-blue-400 font-bold text-black"
+      : "";
   return (
     <div className="flex flex-col justify-between">
       {/* blue-part */}
@@ -21,8 +25,8 @@ const DeliveryDetailsPage = () => {
         <div className="flex flex-col gap-2">
           <div className="flex flex-row justify-left items-center gap-2">
             <span className="text-md ">Driver</span>
-            <span className="text-sm">
-              <FaCaretRight />
+            <span className="text-lg">
+              <RxCaretRight />
             </span>
             <span className="text-sm font-bold whitespace-nowrap">
               {DeliveriesData[deliveryIndex].driver}
@@ -56,7 +60,7 @@ const DeliveryDetailsPage = () => {
           </div>
         </div>
         <div className="flex flex-grow w-full"></div>
-        <div className="w-full flex lg:flex-row flex-row m-auto gap-2">
+        <div className="w-full flex lg:flex-row flex-col m-auto gap-2">
           <a
             href={`tel:${
               DriversData[DeliveriesData[deliveryIndex].driver].contact
@@ -64,11 +68,11 @@ const DeliveryDetailsPage = () => {
             className="w-full bg-gray-500 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded-2xl flex flex-col items-center justify-between"
           >
             <FaPhone />
-            <p>Call Contact</p>
+            <p className="whitespace-nowrap">Call Contact</p>
           </a>
           <a
             href="#"
-            className="w-full bg-transparent border-white border-2 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded-2xl inline-block flex flex-col items-center"
+            className="w-full bg-gray-500 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded-2xl flex flex-col items-center justify-between"
           >
             <MdEdit />
             Edit

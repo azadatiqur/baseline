@@ -5,7 +5,7 @@ const PhotoAndSignature = () => {
     <div className="flex flex-col lg:flex-row">
       <div className="w-full flex flex-col">
         <p className="text-md">Photo</p>
-        <div className="bg-gray-200 bg-opacity-80 flex flex-row justify-left items-center gap-x-2 mb-5 p-2 border border-0 rounded-xl mr-6 sm:mr-1 sm:mr-6">
+        <div className="bg-gray-200 bg-opacity-80 flex flex-row gap-x-2 mb-5 p-2 border border-0 rounded-xl mr-6 sm:mr-1 sm:mr-6">
           <ImageUploader />
         </div>
       </div>
