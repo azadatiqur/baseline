@@ -12,7 +12,7 @@ import {
 const MapSearchAndFilter = () => {
   return (
     <div className="flex lg:flex-row flex-col items-center mb-5 gap-4">
-      <p className="text-xl">My Deliveries</p>
+      <p className="text-xl whitespace-nowrap">My Deliveries</p>
       <div className="w-full lg:w-auto flex flex-row items-center gap-5 justify-end ml-auto">
         <div className="relative w-full">
           <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
